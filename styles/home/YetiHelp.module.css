@@ -1,0 +1,35 @@
+.yetiHelp {
+  font-size: 20px;
+  line-height: 32px;
+  max-width: 390px;
+}
+.marginBottom {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1199px) {
+  .yetiHelp {
+    font-size: 20px;
+    line-height: 32px;
+    max-width: 390px;
+    text-align: left;
+  }
+  .yetiFlexEnd {
+    justify-content: end;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .yetiFlexEnd {
+    justify-content: center;
+  }
+  .yetiHelp {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: auto;
+    text-align: center;
+  }
+  .marginBottom {
+    margin-bottom: 20px;
+  }
+}

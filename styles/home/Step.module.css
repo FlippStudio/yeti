@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik"),
+    url(../../public/fonts/rubik-mono-one.ttf) format("truetype");
+}
+.horizontalLine {
+  width: 100%;
+  height: 0px;
+  border: 1px solid #00a6f1;
+  margin-left: 25px;
+}
+.dotted {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(
+    to right,
+    #00a6f1 15%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-position: bottom;
+  background-size: 15px 1px;
+  background-repeat: repeat-x;
+}
+.stepPercent {
+  font-size: 56px;
+  font-family: "Rubik" !important;
+}
+.incomplete {
+  color: #00a6f1;
+}
+.stepTitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+.stepDesc {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 1200px) {
+  .stepPercent {
+    font-size: 48px;
+  }
+  .stepDesc {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

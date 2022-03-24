@@ -1,0 +1,19 @@
+.container {
+  padding: 0 !important;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.24);
+}
+.appBar {
+  box-shadow: none;
+  background-color: transparent;
+}
+.page {
+  margin: 10px 0;
+  color: #fff;
+  display: block;
+}
+
+@media screen and (max-width: 1600px) {
+  .container {
+    padding: 0 30px !important;
+  }
+}

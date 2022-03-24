@@ -1,0 +1,32 @@
+.utilities {
+  background: #184093;
+  padding: 250px 0 200px;
+  margin-top: -130px;
+}
+.utiDesc {
+  font-size: 20px;
+  line-height: 32px;
+  margin-top: 8px;
+  max-width: 720px;
+  text-align: center;
+  margin-bottom: 56px;
+}
+.yeti {
+  width: 100%;
+  height: 1014px;
+  background: url("../../public/images/yeticerberg.png") center center no-repeat;
+  position: absolute;
+  top: 70px;
+  left: 40px;
+}
+
+@media screen and (max-width: 599px) {
+  .utilities {
+    margin-top: -310px;
+  }
+  .utiDesc {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+}

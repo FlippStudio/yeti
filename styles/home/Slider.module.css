@@ -1,0 +1,8 @@
+.overflow {
+  overflow-x: hidden;
+  padding-top: 50px;
+  margin-top: -200px;
+}
+.slideContainer {
+  max-width: 280px !important;
+}

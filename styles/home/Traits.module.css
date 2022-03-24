@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik"),
+    url(../../public/fonts/rubik-mono-one.ttf) format("truetype");
+}
+
+.traits {
+  background: #091434;
+  padding: 250px 0;
+}
+.yetiSubtitle {
+  font-size: 32px;
+  font-family: "Rubik" !important;
+}
+.yetiTitle {
+  font-size: 64px;
+  line-height: 64px;
+  font-family: "Rubik" !important;
+  color: #00a6f1;
+  margin-bottom: 40px;
+}
+.ourTitle {
+  margin-top: 180px;
+  margin-bottom: 54px;
+}
+
+@media screen and (max-width: 1199px) {
+  .traits {
+    padding: 125px 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .traits {
+    padding: 50px 0;
+  }
+  .yetiSubtitle {
+    font-size: 16px;
+  }
+  .yetiTitle {
+    font-size: 32px;
+    line-height: 40px;
+    font-family: "Rubik" !important;
+    color: #00a6f1;
+    margin-bottom: 40px;
+  }
+  .ourTitle {
+    margin-top: 100px;
+    margin-bottom: 54px;
+  }
+}

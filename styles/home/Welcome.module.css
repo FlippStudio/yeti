@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik"),
+    url(../../public/fonts/rubik-mono-one.ttf) format("truetype");
+}
+
+.container {
+  padding: 0 !important;
+  margin-top: 94px;
+}
+.yeti {
+  width: 100%;
+  height: 1014px;
+  background: url("../../public/images/yeticerberg.png") center center no-repeat;
+  position: absolute;
+  top: -100px;
+  left: 40px;
+}
+.title {
+  font-size: 72px;
+  line-height: 80px;
+  font-family: "Rubik" !important;
+  max-width: 630px;
+  width: 100%;
+}
+.subtitle {
+  font-size: 55px;
+  line-height: 64px;
+  color: #00a6f1;
+  font-family: "Rubik" !important;
+}
+.welcomeDesc {
+  font-size: 20px;
+  line-height: 32px;
+  max-width: 510px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+.btn {
+  font-weight: 900;
+  font-size: 16px;
+  background-color: #00a6f1;
+  height: 56px;
+  letter-spacing: 0.01em;
+}
+.link {
+  font-size: 16px;
+  font-weight: 900;
+  margin-left: 16px;
+}
+.arrowSpace {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.statsContainer {
+  margin-top: 130px;
+  z-index: 10;
+  position: relative;
+}
+.stats {
+  font-size: 32px;
+  font-family: "Rubik" !important;
+  margin-bottom: 0;
+  line-height: 32px;
+}
+.statsDesc {
+  font-size: 20px;
+  color: #00a6f1;
+}
+.nextSection {
+  font-size: 16px;
+  background-color: #184093;
+  width: 73px;
+  height: 73px;
+  border-radius: 100%;
+  border: 1px solid #00a6f1;
+}
+
+@media screen and (max-width: 1600px) {
+  .container {
+    padding: 0 30px !important;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .stats {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .stats {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .container {
+    padding: 0 15px !important;
+    margin-top: 30px;
+  }
+  .title {
+    font-size: 40px;
+    line-height: 64px;
+    text-align: center;
+  }
+  .subtitle {
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+  }
+  .welcomeDesc {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    max-width: none;
+  }
+  .fCenter {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .statsContainer {
+    margin-top: 30px;
+    z-index: 10;
+    position: relative;
+  }
+  .stats {
+    text-align: center;
+  }
+  .statsDesc {
+    text-align: center;
+  }
+}

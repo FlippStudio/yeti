@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik"),
+    url(../../public/fonts/rubik-mono-one.ttf) format("truetype");
+}
+.normalTrait {
+  font-size: 20px;
+  line-height: 32px;
+}
+.blue {
+  color: #00a6f1;
+}
+.amount {
+  font-family: "Rubik" !important;
+  font-size: 32px;
+  line-height: 32px;
+}
