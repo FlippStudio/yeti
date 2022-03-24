@@ -3,6 +3,28 @@
   padding-bottom: 400px;
   position: relative;
 }
+.mintSec {
+  margin-bottom: 180px;
+}
+.mintDesc {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.mintAddDesc {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+.mintBtn {
+  font-weight: 900;
+  font-size: 16px;
+  background-color: #00a6f1;
+  width: 160px;
+  height: 56px;
+  letter-spacing: 0.01em;
+}
 .checkBack {
   width: 100%;
   height: 250px;
@@ -29,6 +51,16 @@
   line-height: 24px;
 }
 
+@media screen and (max-width: 899px) {
+  .mintSec {
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  .mintBtn {
+    margin-bottom: 100px;
+  }
+}
+
 @media screen and (max-width: 599px) {
   .faq {
     padding: 100px 0 50px;
@@ -43,5 +75,16 @@
   .content {
     font-size: 14px;
     line-height: 28px;
+  }
+  .mintDesc {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-top: 24px;
+  }
+  .mintAddDesc {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 32px;
   }
 }

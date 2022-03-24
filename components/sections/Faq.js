@@ -3,6 +3,9 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import FaqAccordion from "../FaqAccordion";
 import classes from "../../styles/home/Faq.module.css";
+import { Button, Grid } from "@mui/material";
+import mint from '../../public/images/faq/mint.svg'
+import Image from "next/image";
 
 const questions = [
   {
@@ -35,6 +38,47 @@ const Faq = () => {
   return (
     <section className={classes.faq}>
       <Container maxWidth="lg">
+        <Box>
+          <Grid container spacing={3} className={classes.mintSec}>
+            <Grid item md={6} xs={12}>
+              <Box>
+                <Typography component="span" className="title-section">
+                  MINT
+                </Typography>
+                <Typography
+                  component="span"
+                  className="title-section"
+                  marginLeft={2}
+                  color={"#00A6F1"}
+                >
+                  YETI
+                </Typography>
+                <Typography
+                  component="div"
+                  className={classes.mintDesc}
+                >
+                  Nulla facilisi. Pellentesque facilisis pretium felis nec
+                  condimentum. Curabitur scelerisque nec libero in finibus.
+                </Typography>
+                <Typography
+                  component="div"
+                  className={classes.mintAddDesc}
+                >
+                  Nulla facilisi. Pellentesque facilisis pretium felis nec
+                  condimentum. Curabitur scelerisque nec libero in finibus.
+                </Typography>
+                <Button variant="contained" className={classes.mintBtn}>
+                  MINT
+                </Button>
+              </Box>
+            </Grid>
+            <Grid item md={6} xs={12}>
+            <Box className="flex-center">
+              <Image src={mint} alt="Yeti Kotleti" />
+            </Box>
+            </Grid>
+          </Grid>
+        </Box>
         <Box>
           <Typography
             component="h2"
