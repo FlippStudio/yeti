@@ -8,10 +8,7 @@ import Box from "@mui/material/Box";
 
 const Socials = ({ c }) => {
   return (
-    <Box
-      sx={{ flexGrow: 0, display: "flex", justifyContent: "flex-end" }}
-      className={c}
-    >
+    <Box sx={{ flexGrow: 0 }} className={c}>
       <Stack direction="row" spacing={1}>
         <IconButton aria-label="Discord">
           <Social imageUrl={discord} />

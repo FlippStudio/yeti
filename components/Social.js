@@ -7,7 +7,7 @@ const Social = ({ imageUrl }) => {
       href="#"
       target="_blank"
       rel="noopener noreferrer"
-      className={classes.social}
+      className={`${classes.social} flex-center`}
     >
       <Image src={imageUrl} alt="Socials" />
     </a>

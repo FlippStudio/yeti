@@ -3,5 +3,12 @@
   width: 32px;
   height: 32px;
   border-radius: 100%;
-  padding-bottom: 2px;
+}
+
+@media screen and (max-width: 899px){
+  .social {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+  }
 }

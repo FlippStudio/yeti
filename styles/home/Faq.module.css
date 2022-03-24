@@ -31,7 +31,7 @@
 
 @media screen and (max-width: 599px) {
   .faq {
-    padding: 100px 0;
+    padding: 100px 0 50px;
   }
   .checkBack {
     display: none;

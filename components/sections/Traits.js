@@ -16,6 +16,7 @@ import Trait from "../Trait";
 import YetiHelp from "../YetiHelp";
 import Image from "next/image";
 import classes from "../../styles/home/Traits.module.css";
+import SliderMobile from "../SliderTraitsMobile";
 
 const traits = [traitOne, traitTwo, traitThree, traitFour, traitFive, traitSix];
 const yetis = [
@@ -73,13 +74,14 @@ const Traits = () => {
           >
             Our traits
           </Typography>
-          <Grid container spacing={3}>
+          <Grid container spacing={3} className='d-sm-none'>
             {traits.map((url, index) => (
               <Grid item lg={2} md={4} sm={6} xs={12} key={index}>
                 <Trait imageUrl={url} />
               </Grid>
             ))}
           </Grid>
+          <SliderMobile data={traits} /> 
         </Box>
       </Container>
     </section>

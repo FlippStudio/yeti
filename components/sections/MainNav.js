@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
+import Menuitem from "@mui/material/MenuItem";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
@@ -33,7 +34,8 @@ const ResponsiveApp = () => {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-  const cl = "d-lg-none";
+  const lg = "d-lg-none flex-end";
+  const xs = "flex-center";
 
   return (
     <AppBar position="static" className={classes.appBar}>
@@ -49,6 +51,33 @@ const ResponsiveApp = () => {
             sx={{
               flexGrow: 1,
               display: { xs: "flex", md: "none" },
+              justifyContent: "flex-start",
+            }}
+          >
+            <Link href="/">
+              <Image src={logo} alt="Meta logo" />
+            </Link>
+          </Box>
+          <Box
+            sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
+            className="menu-position"
+          >
+            {pages.map((page) => (
+              <Button
+                key={page}
+                onClick={handleCloseNavMenu}
+                className={classes.page}
+              >
+                {page}
+              </Button>
+            ))}
+          </Box>
+
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "flex", md: "none" },
+              justifyContent: "flex-end",
             }}
           >
             <IconButton
@@ -81,38 +110,17 @@ const ResponsiveApp = () => {
               className="menu-mobile"
             >
               {pages.map((page) => (
-                <Button
-                  key={page}
-                  className={classes.page}
-                  onClick={handleCloseNavMenu}
-                >
-                  {page}
-                </Button>
+                <Menuitem key={page} sx={{ justifyContent: "center" }}>
+                  <Button className={classes.page} onClick={handleCloseNavMenu}>
+                    {page}
+                  </Button>
+                </Menuitem>
               ))}
-              <Socials />
+
+              <Socials c={xs} />
             </Menu>
           </Box>
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-            <Link href="/">
-              <Image src={logo} alt="Meta logo" />
-            </Link>
-          </Box>
-          <Box
-            sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
-            className="menu-position"
-          >
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                className={classes.page}
-              >
-                {page}
-              </Button>
-            ))}
-          </Box>
-
-          <Socials c={cl} />
+          <Socials c={lg} />
         </Toolbar>
       </Container>
     </AppBar>

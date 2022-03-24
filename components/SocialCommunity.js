@@ -7,13 +7,7 @@ const SocialCommunity = ({ imageUrl, name }) => {
     <a href="#">
       <Box className="flex-center comm-stat">
         <Image src={imageUrl} alt="Community" />
-        <Typography
-          component="span"
-          fontSize={24}
-          fontWeight={"900"}
-          lineHeight={"24px"}
-          marginLeft={"16px"}
-        >
+        <Typography component="span" className="comm-item d-sm-none">
           {name}
         </Typography>
       </Box>

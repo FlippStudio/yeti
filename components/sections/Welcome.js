@@ -36,7 +36,7 @@ const Welcome = () => {
                 item
                 md={3}
                 sm={5}
-                xs={12}
+                xs={6}
                 className={`flex-start ${classes.fCenter}`}
               >
                 <Button variant="contained" className={classes.btn}>
@@ -46,7 +46,7 @@ const Welcome = () => {
               <Grid
                 item
                 sm={6}
-                xs={12}
+                xs={6}
                 className={`flex-start ${classes.fCenter}`}
               >
                 <a href="" target="_blank" rel="noopener noreferrer">
