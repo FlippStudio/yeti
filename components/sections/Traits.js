@@ -18,7 +18,7 @@ import Image from "next/image";
 import classes from "../../styles/home/Traits.module.css";
 import SliderMobile from "../SliderTraitsMobile";
 import { Button } from "@mui/material";
-import yetiMobile from '../../public/images/traits/yetiMobile.svg'
+import yetiMobile from '../../public/images/traits/yetimobile.svg'
 
 const traits = [traitOne, traitTwo, traitThree, traitFour, traitFive, traitSix];
 const yetis = [
