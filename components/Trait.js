@@ -6,7 +6,10 @@ import classes from "../styles/home/Trait.module.css";
 const Trait = ({ imageUrl }) => {
   return (
     <Box>
-      <Image src={imageUrl} alt="Trait" />
+      <Box className="flex-center">
+        <Image src={imageUrl} alt="Trait" />
+      </Box>
+
       <Box className="flex-center" marginTop={1}>
         <Typography
           component="span"

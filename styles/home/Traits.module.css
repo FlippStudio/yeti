@@ -5,8 +5,14 @@
 }
 
 .traits {
+  background: url("../../public/images/trait-back.png") bottom center no-repeat,
+    #091434;
+  padding: 250px 0 250px;
+}
+.ourTraits {
+  margin-top: -200px;
   background: #091434;
-  padding: 250px 0;
+  padding-bottom: 130px;
 }
 .yetiSubtitle {
   font-size: 32px;
@@ -23,17 +29,42 @@
   margin-top: 180px;
   margin-bottom: 54px;
 }
+.mYeti {
+  margin-top: 180px;
+}
+.mImageYeti {
+  margin-top: 80px;
+}
+.yetiDesc {
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+.bold {
+  font-weight: 700;
+}
+.mintBtn {
+  font-weight: 900;
+  font-size: 16px;
+  background-color: #00a6f1;
+  height: 56px;
+  width: 210px;
+  letter-spacing: 0.01em;
+}
 
 @media screen and (max-width: 1199px) {
   .traits {
-    padding: 125px 0;
+    padding: 125px 0 250px;
     text-align: center;
+  }
+  .mYeti {
+    margin-top: 100px;
   }
 }
 
 @media screen and (max-width: 599px) {
   .traits {
-    padding: 50px 0;
+    padding: 50px 0 250px;
   }
   .yetiSubtitle {
     font-size: 16px;
