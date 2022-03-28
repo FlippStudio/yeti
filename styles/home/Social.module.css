@@ -1,8 +1,12 @@
 .social {
   border: 1px solid rgba(0, 166, 241, 0.4);
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   border-radius: 100%;
+  transition: 0.3s ease;
+}
+.social:hover{
+  background-color: #14B6FF;
 }
 
 @media screen and (max-width: 899px){

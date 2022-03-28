@@ -7,6 +7,7 @@ import discord from "../../public/images/socials/discord-welcome.svg";
 import arrow from "../../public/images/arrow.svg";
 import Image from "next/image";
 import classes from "../../styles/home/Welcome.module.css";
+import { Stack } from "@mui/material";
 
 const scrollTo = (e) => {
   let utilities = document.getElementById("uti");
@@ -21,44 +22,38 @@ const Welcome = () => {
         <Grid container spacing={2}>
           <Grid item lg={6} sm={10} xs={12}>
             <Typography component="h1" className={classes.title}>
-              YETI KOTLETI
+              META YETI
             </Typography>
             <Typography component="h2" className={classes.subtitle}>
-              Lorem ipsum
+              Icey friends leaps into the Terra-verse!
             </Typography>
             <Typography component="div" className={classes.welcomeDesc}>
               Duis egestas rutrum erat vel finibus. Lorem ipsum dolor sit amet,
               consectetur adipiscing elit. Donec dapibus purus eget nisl
               efficitur, at porttitor ex accumsan.
             </Typography>
-            <Grid container spacing={2}>
-              <Grid
-                item
-                md={3}
-                sm={5}
-                xs={6}
-                className={`flex-start ${classes.fCenter}`}
-              >
-                <Button variant="contained" className={classes.btn}>
+            <Stack>
+              <Box className={`flex-start ${classes.fCenter}`}>
+                <Button variant="contained" className="btn mr-4">
                   Explore now!
                 </Button>
-              </Grid>
-              <Grid
-                item
-                sm={6}
-                xs={6}
-                className={`flex-start ${classes.fCenter}`}
-              >
-                <a href="" target="_blank" rel="noopener noreferrer">
-                  <Image src={discord} alt="Discord Yeti" />
-                </a>
-                <a href="" target="_blank" rel="noopener noreferrer">
-                  <Typography component="h6" className={classes.link}>
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="comm flex-center"
+                >
+                  <Image
+                    src={discord}
+                    alt="Discord Yeti"
+                    className="comm-social"
+                  />
+                  <Typography component="span" className={classes.link}>
                     JOIN DISCORD
                   </Typography>
                 </a>
-              </Grid>
-            </Grid>
+              </Box>
+            </Stack>
             <Grid container spacing={2} className={classes.statsContainer}>
               <Grid item md={3} sm={4} xs={12} className={classes.fCenter}>
                 <Typography component="p" className={classes.stats}>

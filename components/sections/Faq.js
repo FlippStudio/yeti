@@ -4,15 +4,15 @@ import Typography from "@mui/material/Typography";
 import FaqAccordion from "../FaqAccordion";
 import classes from "../../styles/home/Faq.module.css";
 import { Button, Grid } from "@mui/material";
-import mint from '../../public/images/faq/mint.svg'
+import mint from "../../public/images/faq/mint.svg";
 import Image from "next/image";
 
 const questions = [
   {
     id: 1,
-    title: "Duis egestas rutrum erat vel finibus?",
+    title: "Game? What game?",
     content:
-      "Maecenas facilisis dolor vitae sodales tincidunt. Maecenas molestie nisl sit amet nulla iaculis finibus. Aenean mollis ut nisi nec venenatis. Ut tristique vehicula venenatis. Nullam vitae dapibus nibh. Proin egestas quis elit a pulvinar. Mauris quis eleifend quam. Aliquam consequat lectus hendrerit mauris gravida aliquet. ",
+      ".. expect a play to earn game with amazing token utility that is both attractive, fun and easy to play. We plan to make a game that is open to all non-crypto and crypto players alike.",
   },
   {
     id: 2,
@@ -53,29 +53,25 @@ const Faq = () => {
                 >
                   YETI
                 </Typography>
-                <Typography
-                  component="div"
-                  className={classes.mintDesc}
-                >
-                  Nulla facilisi. Pellentesque facilisis pretium felis nec
-                  condimentum. Curabitur scelerisque nec libero in finibus.
+                <Typography component="div" className={classes.mintDesc}>
+                  Most of the proceeds from the mint will be used to fund the
+                  production of the MetaYeti&apos;s game. We are aiming to be the
+                  premier gamefi in Terra.
                 </Typography>
-                <Typography
-                  component="div"
-                  className={classes.mintAddDesc}
-                >
-                  Nulla facilisi. Pellentesque facilisis pretium felis nec
-                  condimentum. Curabitur scelerisque nec libero in finibus.
+                <Typography component="div" className={classes.mintAddDesc}>
+                  The team and partners behind MetaYeti are hard working and
+                  talented, we will strive to give as much benefits to the
+                  holders. Own the yeti, be part of the yeti-verse.
                 </Typography>
-                <Button variant="contained" className={classes.mintBtn}>
+                <Button variant="contained" className={`${classes.mintBtn} btn`}>
                   MINT
                 </Button>
               </Box>
             </Grid>
             <Grid item md={6} xs={12}>
-            <Box className="flex-center">
-              <Image src={mint} alt="Yeti Kotleti" />
-            </Box>
+              <Box className="flex-center">
+                <Image src={mint} alt="Yeti Kotleti" />
+              </Box>
             </Grid>
           </Grid>
         </Box>

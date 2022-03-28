@@ -63,26 +63,6 @@ const yetis = [
     name: "YETI NAME #12345",
     imageUrl: yetiFour,
   },
-  {
-    id: 11,
-    name: "YETI NAME #12345",
-    imageUrl: yetiOne,
-  },
-  {
-    id: 12,
-    name: "YETI NAME #12345",
-    imageUrl: yetiFive,
-  },
-  {
-    id: 13,
-    name: "YETI NAME #12345",
-    imageUrl: yetiFour,
-  },
-  {
-    id: 14,
-    name: "YETI NAME #12345",
-    imageUrl: yetiTwo,
-  },
 ];
 
 const Slider = () => {
@@ -96,11 +76,11 @@ const Slider = () => {
   return (
     <div className={classes.overflow}>
       <Swiper
-        slidesPerView={7}
-        spaceBetween={30}
         pagination={pagination}
         modules={[Pagination]}
         className={classes.swiper}
+        loop={true}
+        rewind={true}
         breakpoints={{
           300: {
             slidesPerView: 1,
@@ -116,6 +96,14 @@ const Slider = () => {
           },
           1200: {
             slidesPerView: 4,
+            spaceBetween: 30
+          },
+          1500: {
+            slidesPerView: 6,
+            spaceBetween: 30
+          },
+          1800: {
+            slidesPerView: 7,
             spaceBetween: 30
           }
         }}

@@ -111,7 +111,11 @@ const ResponsiveApp = () => {
             >
               {pages.map((page) => (
                 <Menuitem key={page} sx={{ justifyContent: "center" }}>
-                  <Button className={classes.page} onClick={handleCloseNavMenu}>
+                  <Button
+                    className={classes.page}
+                    onClick={handleCloseNavMenu}
+                    variant="text"
+                  >
                     {page}
                   </Button>
                 </Menuitem>

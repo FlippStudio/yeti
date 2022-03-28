@@ -11,7 +11,7 @@ const YetiHelp = ({ imageUrl, text }) => {
           <Image src={imageUrl} alt="Yeti's helping" />
         </Box>
       </Grid>
-      <Grid item lg={9} md={8} sm={8} xs={12} className={classes.marginBottom}>
+      <Grid item lg={9} md={8} sm={8} xs={12} className={`${classes.marginBottom} flex-start ${classes.fCenter}`}>
         <div className={classes.yetiHelp}>{text}</div>
       </Grid>
     </>

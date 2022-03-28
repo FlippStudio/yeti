@@ -44,12 +44,7 @@
   font-weight: 700;
 }
 .mintBtn {
-  font-weight: 900;
-  font-size: 16px;
-  background-color: #00a6f1;
-  height: 56px;
   width: 210px;
-  letter-spacing: 0.01em;
 }
 
 @media screen and (max-width: 1199px) {

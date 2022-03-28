@@ -9,7 +9,13 @@ import { Pagination } from "swiper";
 const SliderMobile = ({ data }) => {
   return (
     <div className={`${classes.overflowMobile} ${classes.sliderMobile}`}>
-      <Swiper slidesPerView={1} spaceBetween={0} modules={[Pagination]}>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={0}
+        modules={[Pagination]}
+        loop={true}
+        rewind={true}
+      >
         {data.map((url, index) => (
           <SwiperSlide className={classes.slideContainer} key={index}>
             <Trait imageUrl={url} />
