@@ -80,7 +80,8 @@ const Slider = () => {
         modules={[Pagination]}
         className={classes.swiper}
         loop={true}
-        rewind={true}
+        loopFillGroupWithBlank={true}
+        slidesPerGroup={1}
         breakpoints={{
           300: {
             slidesPerView: 1,

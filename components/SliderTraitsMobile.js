@@ -14,7 +14,8 @@ const SliderMobile = ({ data }) => {
         spaceBetween={0}
         modules={[Pagination]}
         loop={true}
-        rewind={true}
+        loopFillGroupWithBlank={true}
+        slidesPerGroup={1}
       >
         {data.map((url, index) => (
           <SwiperSlide className={classes.slideContainer} key={index}>
