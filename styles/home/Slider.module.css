@@ -6,9 +6,6 @@
 .overflowMobile {
   overflow-x: hidden;
 }
-.slideContainer {
-  max-width: 280px !important;
-}
 .sliderMobile{
   display: none;
 }

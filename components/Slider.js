@@ -79,9 +79,8 @@ const Slider = () => {
         pagination={pagination}
         modules={[Pagination]}
         className={classes.swiper}
+        slidesPerView={'auto'}
         loop={true}
-        loopFillGroupWithBlank={true}
-        slidesPerGroup={1}
         breakpoints={{
           300: {
             slidesPerView: 1,
@@ -110,7 +109,7 @@ const Slider = () => {
         }}
       >
         {yetis.map((yeti) => (
-          <SwiperSlide className={classes.slideContainer} key={yeti.id}>
+          <SwiperSlide className={`${classes.slideContainer} flex-center`} key={yeti.id}>
             <Yeti
               title={yeti.name}
               imageUrl={yeti.imageUrl}
