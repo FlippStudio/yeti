@@ -11,13 +11,16 @@ const Socials = ({ c }) => {
     <Box sx={{ flexGrow: 0 }} className={c}>
       <Stack direction="row" spacing={1}>
         <IconButton aria-label="Discord">
-          <Social imageUrl={discord} />
+          <Social
+            url="https://discord.com/invite/7mSJSY8C"
+            imageUrl={discord}
+          />
         </IconButton>
         <IconButton aria-label="Twitter">
-          <Social imageUrl={twitter} />
+          <Social url="#" imageUrl={twitter} />
         </IconButton>
         <IconButton aria-label="Instagram">
-          <Social imageUrl={instagram} />
+          <Social url="#" imageUrl={instagram} />
         </IconButton>
       </Stack>
     </Box>

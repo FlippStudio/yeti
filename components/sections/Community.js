@@ -9,16 +9,19 @@ const socials = [
     id: 1,
     imageUrl: discord,
     name: "DISCORD",
+    url: "https://discord.com/invite/7mSJSY8C",
   },
   {
     id: 2,
     imageUrl: twitter,
     name: "TWITTER",
+    url: '#'
   },
   {
     id: 3,
     imageUrl: instagram,
     name: "INSTAGRAM",
+    url: '#'
   },
 ];
 
@@ -31,6 +34,7 @@ const Community = () => {
             imageUrl={social.imageUrl}
             name={social.name}
             key={social.id}
+            url={social.url}
           />
         ))}
       </Box>

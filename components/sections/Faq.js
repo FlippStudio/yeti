@@ -10,27 +10,39 @@ import Image from "next/image";
 const questions = [
   {
     id: 1,
-    title: "Game? What game?",
+    title: "What is NFT?",
     content:
-      ".. expect a play to earn game with amazing token utility that is both attractive, fun and easy to play. We plan to make a game that is open to all non-crypto and crypto players alike.",
+      "NFT is a non-fungible token which can be use as a proof of ownership stored on blockchain.",
   },
   {
     id: 2,
-    title: "Duis egestas rutrum erat vel finibus?",
+    title: "What is MetaYeti?",
     content:
-      "Maecenas facilisis dolor vitae sodales tincidunt. Maecenas molestie nisl sit amet nulla iaculis finibus. Aenean mollis ut nisi nec venenatis. Ut tristique vehicula venenatis. Nullam vitae dapibus nibh. Proin egestas quis elit a pulvinar. Mauris quis eleifend quam. Aliquam consequat lectus hendrerit mauris gravida aliquet. ",
+      "MetaYeti is the NFT collection connected with a future p2e mobile game.",
   },
   {
     id: 3,
-    title: "Duis egestas rutrum erat vel finibus?",
+    title: "How big is the MetaYeti collection?",
     content:
-      "Maecenas facilisis dolor vitae sodales tincidunt. Maecenas molestie nisl sit amet nulla iaculis finibus. Aenean mollis ut nisi nec venenatis. Ut tristique vehicula venenatis. Nullam vitae dapibus nibh. Proin egestas quis elit a pulvinar. Mauris quis eleifend quam. Aliquam consequat lectus hendrerit mauris gravida aliquet. ",
+      "MetaYeti is the NFT collection of 5555 unique characters specially designed for the needs of the project.",
   },
   {
     id: 4,
-    title: "Duis egestas rutrum erat vel finibus?",
+    title: "Which blockchain is using by Metayeti?",
     content:
-      "Maecenas facilisis dolor vitae sodales tincidunt. Maecenas molestie nisl sit amet nulla iaculis finibus. Aenean mollis ut nisi nec venenatis. Ut tristique vehicula venenatis. Nullam vitae dapibus nibh. Proin egestas quis elit a pulvinar. Mauris quis eleifend quam. Aliquam consequat lectus hendrerit mauris gravida aliquet. ",
+      "MetaYeti is based on Terra (LUNA) blockchain.",
+  },
+  {
+    id: 5,
+    title: "How can I buy a MetaYeti?",
+    content:
+      "You can buy MetaYeti on Luart.io",
+  },
+  {
+    id: 6,
+    title: "What about DAO funds?",
+    content:
+      "The collected treasury mostly will be used for investing in p2e game and community development.",
   },
 ];
 

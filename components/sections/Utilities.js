@@ -22,7 +22,7 @@ const Utilities = () => {
             </Typography>
             <Box className="flex-center">
               <Typography component="div" className={classes.utiDesc}>
-                MetaYeti are a collection of __ NFTs that are made up of over __
+                MetaYeti are a collection of 5555 NFTs that are made up of over __
                 different traits ranging from different helmets, backgrounds,
                 faces, (TBD)
               </Typography>
