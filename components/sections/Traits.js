@@ -43,7 +43,7 @@ const Traits = () => {
   return (
     <>
       <section className={classes.traits}>
-        <Container maxWidth="xl">
+        <Container sx={{maxWidth: { xl: "xl", lg: "lg", md: 'md', sm: 'sm', xs: 'xs' }}}>
           <Grid container spacing={2}>
             <Grid item lg={6} xs={12} order={{ lg: 1, xs: 2 }}>
               <Box className="flex-center">
@@ -118,7 +118,7 @@ const Traits = () => {
         </Container>
       </section>
       <section className={classes.ourTraits}>
-        <Container maxWidth="xl">
+        <Container sx={{maxWidth: { xl: "xl", lg: "lg", md: 'md', sm: 'sm', xs: 'xs' }}}>
           <Box>
             <Typography
               component="h2"

@@ -39,7 +39,7 @@ const ResponsiveApp = () => {
 
   return (
     <AppBar position="static" className={classes.appBar}>
-      <Container maxWidth="xl" className={classes.container}>
+      <Container sx={{maxWidth: { xl: "xl", lg: "lg", md: 'md', sm: 'sm', xs: 'xs' }}}>
         <Toolbar disableGutters>
           <Box sx={{ mr: 2, display: { xs: "none", md: "flex" } }}>
             <Link href="/">

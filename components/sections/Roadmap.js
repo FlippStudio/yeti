@@ -44,7 +44,7 @@ const steps = [
 const Roadmap = () => {
   return (
     <section className={classes.roadmap}>
-      <Container maxWidth="xl">
+      <Container sx={{maxWidth: { xl: "xl", lg: "lg", md: 'md', sm: 'sm', xs: 'xs' }}}>
         <Box>
           <Typography
             component="h2"

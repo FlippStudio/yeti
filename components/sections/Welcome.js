@@ -17,7 +17,7 @@ const scrollTo = (e) => {
 
 const Welcome = () => {
   return (
-    <Container maxWidth="xl" className={classes.container}>
+    <Container className={classes.container} sx={{maxWidth: { xl: "xl", lg: "lg", md: 'md', sm: 'sm', xs: 'xs' }}}>
       <Box sx={{ flexGrow: 1, position: "relative", zIndex: 10 }}>
         <Grid container spacing={2}>
           <Grid item lg={6} sm={10} xs={12}>
@@ -38,7 +38,7 @@ const Welcome = () => {
                   Explore now!
                 </Button>
                 <a
-                  href=""
+                  href="https://discord.com/invite/7mSJSY8C"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="comm flex-center"
