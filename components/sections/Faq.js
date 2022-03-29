@@ -49,7 +49,7 @@ const questions = [
 const Faq = () => {
   return (
     <section className={classes.faq}>
-      <Container sx={{maxWidth: { xl: "lg", lg: "lg", md: 'md', sm: 'sm', xs: 'xs' }}}>
+      <Container maxWidth="xl">
         <Box>
           <Grid container spacing={3} className={classes.mintSec}>
             <Grid item md={6} xs={12}>

@@ -17,7 +17,7 @@ const scrollTo = (e) => {
 
 const Welcome = () => {
   return (
-    <Container className={classes.container} sx={{maxWidth: { xl: "xl", lg: "lg", md: 'md', sm: 'sm', xs: 'xs' }}}>
+    <Container maxWidth="xl" className={classes.container}>
       <Box sx={{ flexGrow: 1, position: "relative", zIndex: 10 }}>
         <Grid container spacing={2}>
           <Grid item lg={6} sm={10} xs={12}>

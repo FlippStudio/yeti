@@ -20,9 +20,15 @@
   left: 40px;
 }
 
+@media screen and (max-width: 1499px){
+  .yeti{
+    left: 100px;
+  }
+}
+
 @media screen and (max-width: 599px) {
   .utilities {
-    margin-top: -310px;
+    margin-top: -350px;
   }
   .utiDesc {
     font-size: 16px;

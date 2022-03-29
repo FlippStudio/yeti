@@ -5,7 +5,7 @@ import Socials from "../Socials";
 const Footer = () => {
   return (
     <section className="footer">
-      <Container maxWidth="xl" sx={{ maxWidth: { xl: "xl", lg: "lg", md: 'md', sm: 'sm', xs: 'xs' }, height: "100%" }}>
+      <Container maxWidth="xl" sx={{height: "100%" }}>
         <Box className="flex-space fFlex">
           <Typography component="div">© 2022 META YETI</Typography>
           <Socials c={"d-sm-none"} />
