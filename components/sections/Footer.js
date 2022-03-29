@@ -7,7 +7,7 @@ const Footer = () => {
     <section className="footer">
       <Container maxWidth="xl" sx={{ maxWidth: { xl: "xl", lg: "lg", md: 'md', sm: 'sm', xs: 'xs' }, height: "100%" }}>
         <Box className="flex-space fFlex">
-          <Typography component="div">© 2022 YETI KOTLETI</Typography>
+          <Typography component="div">© 2022 META YETI</Typography>
           <Socials c={"d-sm-none"} />
         </Box>
       </Container>
