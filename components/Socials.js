@@ -17,7 +17,7 @@ const Socials = ({ c }) => {
           />
         </IconButton>
         <IconButton aria-label="Twitter">
-          <Social url="#" imageUrl={twitter} />
+          <Social url="https://twitter.com/MetaYetiGame" imageUrl={twitter} />
         </IconButton>
         <IconButton aria-label="Instagram">
           <Social url="#" imageUrl={instagram} />

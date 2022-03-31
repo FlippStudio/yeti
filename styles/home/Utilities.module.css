@@ -10,6 +10,8 @@
   max-width: 720px;
   text-align: center;
   margin-bottom: 56px;
+  position: relative;
+  z-index: 11;
 }
 .yeti {
   width: 100%;

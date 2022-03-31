@@ -15,7 +15,7 @@ const socials = [
     id: 2,
     imageUrl: twitter,
     name: "TWITTER",
-    url: '#'
+    url: 'https://twitter.com/MetaYetiGame'
   },
   {
     id: 3,
