@@ -24,7 +24,7 @@ const questions = [
     id: 3,
     title: "How big is the MetaYeti collection?",
     content:
-      "MetaYeti is the NFT collection of 5555 unique characters specially designed for the needs of the project.",
+      "MetaYeti is the NFT collection of 8888 unique characters specially designed for the needs of the project.",
   },
   {
     id: 4,
