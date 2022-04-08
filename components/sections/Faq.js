@@ -28,7 +28,7 @@ const questions = [
   },
   {
     id: 4,
-    title: "Which blockchain is using by Metayeti?",
+    title: "Which blockchain is MetaYeti based on?",
     content:
       "MetaYeti is based on Terra (LUNA) blockchain.",
   },
