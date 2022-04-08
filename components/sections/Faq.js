@@ -18,7 +18,7 @@ const questions = [
     id: 2,
     title: "What is MetaYeti?",
     content:
-      "MetaYeti is the NFT collection connected with a future p2e mobile game.",
+      "MetaYeti is an NFT collection, with interesting utility, stay tuned! 👀",
   },
   {
     id: 3,
