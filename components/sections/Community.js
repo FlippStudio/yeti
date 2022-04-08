@@ -9,7 +9,7 @@ const socials = [
     id: 1,
     imageUrl: discord,
     name: "DISCORD",
-    url: "https://discord.com/invite/7mSJSY8C",
+    url: "https://discord.com/invite/NR3QCJP9",
   },
   {
     id: 2,

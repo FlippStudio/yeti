@@ -38,7 +38,7 @@ const Welcome = () => {
                   Explore now!
                 </Button>
                 <a
-                  href="https://discord.com/invite/7mSJSY8C"
+                  href="https://discord.com/invite/NR3QCJP9"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="comm flex-center"

@@ -12,7 +12,7 @@ const Socials = ({ c }) => {
       <Stack direction="row" spacing={1}>
         <IconButton aria-label="Discord">
           <Social
-            url="https://discord.com/invite/7mSJSY8C"
+            url="https://discord.com/invite/NR3QCJP9"
             imageUrl={discord}
           />
         </IconButton>
