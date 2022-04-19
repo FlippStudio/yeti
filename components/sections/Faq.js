@@ -50,43 +50,7 @@ const Faq = () => {
     <section className={classes.faq} id="story">
       <Container maxWidth="xl">
         <Box>
-          <Grid container spacing={6} className={classes.mintSec}>
-            <Grid item md={6} xs={12}>
-              <Box>
-                <Typography component="span" className="title-section">
-                  MINT
-                </Typography>
-                <Typography
-                  component="span"
-                  className="title-section"
-                  marginLeft={2}
-                  color={"#00A6F1"}
-                >
-                  YETI
-                </Typography>
-                <Typography component="div" className={classes.mintDesc}>
-                  Most of the proceeds from the mint will be used to fund the
-                  production of the MetaYeti&apos;s game. We are aiming to be
-                  the premier gamefi in Terra.
-                </Typography>
-                <Typography component="div" className={classes.mintAddDesc}>
-                  The team and partners behind MetaYeti are hard working and
-                  talented, we will strive to give as much benefits to the
-                  holders. Own the yeti, be part of the yeti-verse.
-                </Typography>
-                <Button
-                  variant="contained"
-                  className={`${classes.mintBtn} btn`}
-                >
-                  MINT
-                </Button>
-              </Box>
-            </Grid>
-            <Grid item md={6} xs={12}>
-              <Box className="flex-center">
-                <Image src={mint} alt="Yeti Kotleti" />
-              </Box>
-            </Grid>
+          <Grid container spacing={3} className={classes.mintSec}>
             <Grid item xs={12}>
               <Box sx={{ textAlign: "center" }}>
                 <Typography component="span" className="title-section">

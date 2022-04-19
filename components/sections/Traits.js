@@ -86,7 +86,7 @@ const Traits = () => {
               component="h2"
               className={`${classes.ourTitle} title-section`}
             >
-              Our traits
+              140+ Traits!
             </Typography>
             <Grid container spacing={3} className="d-sm-none">
               {traits.map((url, index) => (

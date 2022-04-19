@@ -96,7 +96,7 @@ const ResponsiveApp = () => {
               Roadmap
             </Button>
             <Button onClick={scrollToMovies} className={classes.page}>
-              Mint
+              Team
             </Button>
             <Button onClick={scrollToFaq} className={classes.page}>
               FAQ
@@ -165,7 +165,7 @@ const ResponsiveApp = () => {
                 onTouchStart={scrollToMovies}
                 className={classes.page}
               >
-                Mint
+                Team
               </Menuitem>
               <Menuitem
                 onClick={scrollToFaq}

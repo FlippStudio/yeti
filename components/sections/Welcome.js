@@ -30,8 +30,8 @@ const Welcome = () => {
             <Typography component="div" className={classes.welcomeDesc}>
               MetaYeti is a collection of 5555 NFTs that is made up of over 130
               different traits ranging from different headwear, backgrounds,
-              faces, accessories, clothes and fur. With a chance to mint our
-              exclusive 1:1s as well!
+              faces, accessories, clothes and fur. Introducing the first
+              semi-idle play to earn game + NFT pfp on the Terra network.
             </Typography>
             <Stack>
               <Box className={`flex-start ${classes.fCenter}`}>

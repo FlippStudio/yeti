@@ -18,13 +18,14 @@
   height: 1014px;
   background: url("../../public/images/yeticerberg.png") center center no-repeat;
   position: absolute;
-  top: 70px;
+  top: 120px;
   left: 40px;
 }
 
-@media screen and (max-width: 1499px){
-  .yeti{
+@media screen and (max-width: 1499px) {
+  .yeti {
     left: 100px;
+    top: 70px;
   }
 }
 

@@ -25,7 +25,7 @@ const Utilities = () => {
                 MetaYeti is not just a profile picture that you can show off,
                 it&apos;s a ticket to access exclusive utilities and perks,
                 obtain a whitelist for other NFT projects, and it will be used
-                as genesis characters in our upcoming game. The first semi-idle.
+                as genesis characters in our upcoming game.
                 <br />
                 <br />
                 Most of the proceeds from the mint will be used to fund the
