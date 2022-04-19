@@ -21,54 +21,13 @@ import { Button } from "@mui/material";
 import yetiMobile from "../../public/images/traits/yetimobile.svg";
 
 const traits = [traitOne, traitTwo, traitThree, traitFour, traitFive, traitSix];
-const yetis = [
-  {
-    id: 1,
-    image: help,
-    text: "We help animals in need all over the world! 10% of sales go to animal shelters!",
-  },
-  {
-    id: 2,
-    image: iglo,
-    text: "Each animal that has received help from us is warmly welcomed in our igloo",
-  },
-  {
-    id: 3,
-    image: meeting,
-    text: "We organize meetings 3 times a year for all YETI owners!",
-  },
-];
 
 const Traits = () => {
   return (
     <>
-      <section className={classes.traits}>
+      <section className={classes.traits} id="yetis">
         <Container maxWidth="xl">
           <Grid container spacing={2}>
-            <Grid item lg={6} xs={12} order={{ lg: 1, xs: 2 }}>
-              <Box className="flex-center">
-                <Image src={yeti} alt="Yeti Kotleti" />
-              </Box>
-            </Grid>
-            <Grid item lg={6} md={12} order={{ lg: 2, xs: 1 }}>
-              <Box>
-                <Typography compontent="h3" className={classes.yetiSubtitle}>
-                  Yeti loves animals
-                </Typography>
-                <Typography component="h2" className={classes.yetiTitle}>
-                  Yeti help animals!
-                </Typography>
-                <Grid container spacing={2}>
-                  {yetis.map((yeti) => (
-                    <YetiHelp
-                      key={yeti.id}
-                      imageUrl={yeti.image}
-                      text={yeti.text}
-                    />
-                  ))}
-                </Grid>
-              </Box>
-            </Grid>
             <Grid
               item
               lg={6}
@@ -98,7 +57,10 @@ const Traits = () => {
                   direction. Every voice will be heard, and no idea is a stupid
                   idea.
                 </Typography>
-                <Button variant="contained" className={`${classes.mintBtn} btn`}>
+                <Button
+                  variant="contained"
+                  className={`${classes.mintBtn} btn`}
+                >
                   GET EARLY ACCESS
                 </Button>
               </Box>

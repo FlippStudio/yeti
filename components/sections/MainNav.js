@@ -23,26 +23,50 @@ const ResponsiveApp = () => {
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
   const lg = "d-lg-none flex-end";
-  const xs = "flex-center";
+  const xs = "flex-center menu-social";
+
+  const scrollTo = (e, component) => {
+    handleCloseNavMenu();
+    component && component.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToAbout = (e) => {
+    let component = document.getElementById("uti");
+    scrollTo(e, component);
+  };
+
+  const scrollToCollection = (e) => {
+    let component = document.getElementById("yetis");
+    scrollTo(e, component);
+  };
+
+  const scrollToMovies = (e) => {
+    let component = document.getElementById("story");
+    scrollTo(e, component);
+  };
+
+  const scrollToNewsletter = (e) => {
+    let component = document.getElementById("roadmap");
+    scrollTo(e, component);
+  };
+
+  const scrollToFaq = (e) => {
+    let component = document.getElementById("faq");
+    scrollTo(e, component);
+  };
 
   return (
     <AppBar position="static" className={classes.appBar}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ mr: 2, display: { xs: "none", md: "flex" } }}>
-            <Link href="/">
+            <Link href="https://www.meta-yeti.com/">
               <Image src={logo} alt="Meta logo" />
             </Link>
           </Box>
@@ -54,7 +78,7 @@ const ResponsiveApp = () => {
               justifyContent: "flex-start",
             }}
           >
-            <Link href="/">
+            <Link href="https://www.meta-yeti.com/">
               <Image src={logo} alt="Meta logo" />
             </Link>
           </Box>
@@ -62,15 +86,21 @@ const ResponsiveApp = () => {
             sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
             className="menu-position"
           >
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                className={classes.page}
-              >
-                {page}
-              </Button>
-            ))}
+            <Button onClick={scrollToAbout} className={classes.page}>
+              About us
+            </Button>
+            <Button onClick={scrollToCollection} className={classes.page}>
+              Yetis
+            </Button>
+            <Button onClick={scrollToNewsletter} className={classes.page}>
+              Roadmap
+            </Button>
+            <Button onClick={scrollToMovies} className={classes.page}>
+              Mint
+            </Button>
+            <Button onClick={scrollToFaq} className={classes.page}>
+              FAQ
+            </Button>
           </Box>
 
           <Box
@@ -109,17 +139,41 @@ const ResponsiveApp = () => {
               }}
               className="menu-mobile"
             >
-              {pages.map((page) => (
-                <Menuitem key={page} sx={{ justifyContent: "center" }}>
-                  <Button
-                    className={classes.page}
-                    onClick={handleCloseNavMenu}
-                    variant="text"
-                  >
-                    {page}
-                  </Button>
-                </Menuitem>
-              ))}
+              <Menuitem
+                onClick={scrollToAbout}
+                onTouchStart={scrollToAbout}
+                className={classes.page}
+              >
+                About us
+              </Menuitem>
+              <Menuitem
+                onClick={scrollToCollection}
+                onTouchStart={scrollToCollection}
+                className={classes.page}
+              >
+                Yetis
+              </Menuitem>
+              <Menuitem
+                onClick={scrollToNewsletter}
+                onTouchStart={scrollToNewsletter}
+                className={classes.page}
+              >
+                Roadmap
+              </Menuitem>
+              <Menuitem
+                onClick={scrollToMovies}
+                onTouchStart={scrollToMovies}
+                className={classes.page}
+              >
+                Mint
+              </Menuitem>
+              <Menuitem
+                onClick={scrollToFaq}
+                onTouchStart={scrollToFaq}
+                className={classes.page}
+              >
+                FAQ
+              </Menuitem>
 
               <Socials c={xs} />
             </Menu>

@@ -28,9 +28,10 @@ const Welcome = () => {
               Icey friends leaps into the Terra-verse!
             </Typography>
             <Typography component="div" className={classes.welcomeDesc}>
-              Duis egestas rutrum erat vel finibus. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Donec dapibus purus eget nisl
-              efficitur, at porttitor ex accumsan.
+              MetaYeti is a collection of 5555 NFTs that is made up of over 130
+              different traits ranging from different headwear, backgrounds,
+              faces, accessories, clothes and fur. With a chance to mint our
+              exclusive 1:1s as well!
             </Typography>
             <Stack>
               <Box className={`flex-start ${classes.fCenter}`}>
@@ -38,7 +39,7 @@ const Welcome = () => {
                   Explore now!
                 </Button>
                 <a
-                  href="https://discord.com/invite/NR3QCJP9"
+                  href="https://discord.com/invite/SCGAWsMKTC"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="comm flex-center"

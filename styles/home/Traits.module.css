@@ -7,7 +7,7 @@
 .traits {
   background: url("../../public/images/trait-back.png") bottom center no-repeat,
     #091434;
-  padding: 250px 0 250px;
+  padding: 150px 0 250px;
 }
 .ourTraits {
   margin-top: -200px;
@@ -28,12 +28,6 @@
 .ourTitle {
   margin-top: 180px;
   margin-bottom: 54px;
-}
-.mYeti {
-  margin-top: 180px;
-}
-.mImageYeti {
-  margin-top: 80px;
 }
 .yetiDesc {
   font-size: 20px;

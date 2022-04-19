@@ -19,7 +19,11 @@ const StepComplete = ({ percent, name, description }) => {
         {name}
       </Typography>
       <Typography component="div" className={classes.stepDesc}>
-        {description}
+        <ul className={classes.listStyle}>
+          {description.map((desc, index) => (
+            <li key={index}>{desc}</li>
+          ))}
+        </ul>
       </Typography>
     </Grid>
   );

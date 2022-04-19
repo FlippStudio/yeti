@@ -38,7 +38,7 @@ a {
   align-items: center;
   justify-content: center;
 }
-.flex-end{
+.flex-end {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -64,11 +64,11 @@ a {
   height: 56px;
   letter-spacing: 0.01em;
 }
-.btn:hover{
-  background-color: #14B6FF;
+.btn:hover {
+  background-color: #14b6ff;
 }
 
-.mr-4{
+.mr-4 {
   margin-right: 48px;
 }
 
@@ -145,16 +145,16 @@ a {
 .comm-stat {
   margin: 0 40px;
 }
-.comm-social{
+.comm-social {
   width: 100%;
   height: 100%;
   border-radius: 100%;
   transition: 0.3s ease;
 }
-.comm:hover .comm-social{
-  background-color: #00A6F1;
+.comm:hover .comm-social {
+  background-color: #00a6f1;
 }
-.comm-item{
+.comm-item {
   font-size: 24px;
   font-weight: 900;
   line-height: 24px;
@@ -167,14 +167,14 @@ a {
   height: 70px;
 }
 
-@media screen and (min-width: 1620px){
-  .MuiContainer-root{
+@media screen and (min-width: 1620px) {
+  .MuiContainer-root {
     padding: 0 80px;
   }
 }
 
-@media screen and (max-width: 1619px){
-  .MuiContainer-root{
+@media screen and (max-width: 1619px) {
+  .MuiContainer-root {
     padding: 0 5%;
   }
 }
@@ -208,13 +208,22 @@ a {
     left: 0 !important;
     right: 0 !important;
   }
+  #menu-appbar .MuiPopover-paper ul {
+    height: 100%;
+  }
   .menu-position {
     justify-content: flex-start;
+  }
+  .menu-social {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    margin-left: -95px;
   }
   .comm-stat {
     margin: 0 20px;
   }
-  .comm-item{
+  .comm-item {
     font-size: 22px;
     margin-left: 10px;
   }
@@ -235,13 +244,13 @@ a {
   .community {
     padding: 0 0 50px;
   }
-  .comm-stat span{
+  .comm-stat span {
     max-width: 40px !important;
   }
   .fFlex {
     justify-content: center;
   }
-  .mr-4{
+  .mr-4 {
     margin-right: 16px;
   }
   .footer {

@@ -9,19 +9,19 @@ const socials = [
     id: 1,
     imageUrl: discord,
     name: "DISCORD",
-    url: "https://discord.com/invite/NR3QCJP9",
+    url: "https://discord.com/invite/SCGAWsMKTC",
   },
   {
     id: 2,
     imageUrl: twitter,
     name: "TWITTER",
-    url: 'https://twitter.com/MetaYetiGame'
+    url: "https://twitter.com/MetaYetiGame",
   },
   {
     id: 3,
     imageUrl: instagram,
     name: "INSTAGRAM",
-    url: '#'
+    url: "#",
   },
 ];
 

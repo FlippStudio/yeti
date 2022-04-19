@@ -10,40 +10,50 @@ const steps = [
   {
     id: 1,
     percent: 10,
-    name: "Phase 1",
-    description:
-      "Aenean eu ante id elit bibendum hendrerit. Cras euismod consectetur mattis. Donec dapibus purus eget nisl efficitur, at porttitor ex accumsan.",
-    status: 1,
+    name: "Phase 0",
+    description: [
+      "Building community",
+      "Giveaways and games",
+      "Social Marketing",
+      "Commence game development of Terra’s first semi-idle play to earn game with defi-mechanics",
+      "Mint!",
+      "WL Collaborations",
+      "Release lite-paper",
+    ],
+    status: 0,
   },
   {
     id: 2,
     percent: 25,
-    name: "Phase 2",
-    description:
-      "Aenean eu ante id elit bibendum hendrerit. Cras euismod consectetur mattis. Donec dapibus purus eget nisl efficitur, at porttitor ex accumsan.",
-    status: 1,
+    name: "Phase 1",
+    description: [
+      "Major collaborations",
+      "Staking/ locking Yeti’s for $YETI tokens",
+      "Yeti Breeding",
+      "Weekly game development sneak peaks",
+      "First DAO voting",
+    ],
+    status: 0,
   },
   {
     id: 3,
     percent: 50,
-    name: "Phase 3",
-    description:
-      "Aenean eu ante id elit bibendum hendrerit. Cras euismod consectetur mattis. Donec dapibus purus eget nisl efficitur, at porttitor ex accumsan.",
+    name: "Phase 2",
+    description: ["Website re-design", "Game alpha testing and release"],
     status: 0,
   },
   {
     id: 4,
     percent: 75,
-    name: "Phase 4",
-    description:
-      "Aenean eu ante id elit bibendum hendrerit. Cras euismod consectetur mattis. Donec dapibus purus eget nisl efficitur, at porttitor ex accumsan.",
+    name: "Phase 3",
+    description: ["Game beta release"],
     status: 0,
   },
 ];
 
 const Roadmap = () => {
   return (
-    <section className={classes.roadmap}>
+    <section className={classes.roadmap} id="roadmap">
       <Container maxWidth="xl">
         <Box>
           <Typography
