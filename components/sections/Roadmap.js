@@ -14,11 +14,11 @@ const steps = [
     description: [
       "Building community",
       "Giveaways and games",
+      "WL Collaborations",
       "Social Marketing",
+      "Release lite-paper",
       "Commence game development of Terra’s first semi-idle play to earn game with defi-mechanics",
       "Mint!",
-      "WL Collaborations",
-      "Release lite-paper",
     ],
     status: 0,
   },
@@ -28,6 +28,7 @@ const steps = [
     name: "Phase 1",
     description: [
       "Major collaborations",
+      "Release Whitepaper",
       "Staking/ locking Yeti’s for $YETI tokens",
       "Yeti Breeding",
       "Weekly game development sneak peaks",
@@ -39,14 +40,17 @@ const steps = [
     id: 3,
     percent: 50,
     name: "Phase 2",
-    description: ["Website re-design", "Game alpha testing and release"],
+    description: [
+      "Unlock activities feature",
+      "Game alpha testing and release",
+    ],
     status: 0,
   },
   {
     id: 4,
     percent: 75,
     name: "Phase 3",
-    description: ["Game beta release"],
+    description: ["Battle feature", "Game beta release"],
     status: 0,
   },
 ];
