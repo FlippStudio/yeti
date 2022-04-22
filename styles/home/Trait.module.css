@@ -4,7 +4,7 @@
     url(../../public/fonts/rubik-mono-one.ttf) format("truetype");
 }
 .normalTrait {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 32px;
 }
 .blue {
@@ -12,6 +12,6 @@
 }
 .amount {
   font-family: "Rubik" !important;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 32px;
 }

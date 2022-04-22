@@ -17,12 +17,6 @@ const socials = [
     name: "TWITTER",
     url: "https://twitter.com/MetaYetiGame",
   },
-  {
-    id: 3,
-    imageUrl: instagram,
-    name: "INSTAGRAM",
-    url: "#",
-  },
 ];
 
 const Community = () => {

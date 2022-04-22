@@ -22,16 +22,14 @@ const Welcome = () => {
         <Grid container spacing={2}>
           <Grid item lg={6} sm={10} xs={12}>
             <Typography component="h1" className={classes.title}>
-              META YETI
+              YETI VILLAGE
             </Typography>
             <Typography component="h2" className={classes.subtitle}>
-              Icey friends leaps into the Terra-verse!
+              by MetaYeti
             </Typography>
             <Typography component="div" className={classes.welcomeDesc}>
-              MetaYeti is a collection of 5555 NFTs that is made up of over 130
-              different traits ranging from different headwear, backgrounds,
-              faces, accessories, clothes and fur. Introducing the first
-              semi-idle play to earn game + NFT pfp on the Terra network.
+              The semi-idle play-to-earn RPG game on Terra network. Featuring
+              defi-mechanics for a sustainable gameplay economy.
             </Typography>
             <Stack>
               <Box className={`flex-start ${classes.fCenter}`}>
@@ -55,7 +53,8 @@ const Welcome = () => {
                 </a>
               </Box>
             </Stack>
-            <Grid container spacing={2} className={classes.statsContainer}>
+
+            {/* <Grid container spacing={2} className={classes.statsContainer}>
               <Grid item md={3} sm={4} xs={12} className={classes.fCenter}>
                 <Typography component="p" className={classes.stats}>
                   30K+
@@ -80,7 +79,7 @@ const Welcome = () => {
                   Owners
                 </Typography>
               </Grid>
-            </Grid>
+            </Grid> */}
           </Grid>
           <Grid
             item

@@ -2,10 +2,6 @@ import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import yeti from "../../public/images/yeti-help.svg";
-import help from "../../public/images/traits/help.svg";
-import iglo from "../../public/images/traits/iglo.svg";
-import meeting from "../../public/images/traits/meeting.svg";
 import traitOne from "../../public/images/traits/trait-1.svg";
 import traitTwo from "../../public/images/traits/trait-2.svg";
 import traitThree from "../../public/images/traits/trait-3.svg";
@@ -13,14 +9,50 @@ import traitFour from "../../public/images/traits/trait-4.svg";
 import traitFive from "../../public/images/traits/trait-5.svg";
 import traitSix from "../../public/images/traits/trait-6.svg";
 import Trait from "../Trait";
-import YetiHelp from "../YetiHelp";
 import Image from "next/image";
 import classes from "../../styles/home/Traits.module.css";
 import SliderMobile from "../SliderTraitsMobile";
 import { Button } from "@mui/material";
 import yetiMobile from "../../public/images/traits/yetimobile.svg";
 
-const traits = [traitOne, traitTwo, traitThree, traitFour, traitFive, traitSix];
+const traits = [
+  {
+    id: 1,
+    imageUrl: traitOne,
+    name: "Background",
+    amount: 21,
+  },
+  {
+    id: 2,
+    imageUrl: traitTwo,
+    name: "Fur",
+    amount: 25,
+  },
+  {
+    id: 3,
+    imageUrl: traitThree,
+    name: "Clothes",
+    amount: 48,
+  },
+  {
+    id: 4,
+    imageUrl: traitFour,
+    name: "Face",
+    amount: 41,
+  },
+  {
+    id: 5,
+    imageUrl: traitFive,
+    name: "Accessories",
+    amount: 27,
+  },
+  {
+    id: 6,
+    imageUrl: traitSix,
+    name: "Hat",
+    amount: 45,
+  },
+];
 
 const Traits = () => {
   return (
@@ -86,12 +118,16 @@ const Traits = () => {
               component="h2"
               className={`${classes.ourTitle} title-section`}
             >
-              140+ Traits!
+              200+ Traits!
             </Typography>
             <Grid container spacing={3} className="d-sm-none">
-              {traits.map((url, index) => (
-                <Grid item xl={2} md={4} sm={6} xs={12} key={index}>
-                  <Trait imageUrl={url} />
+              {traits.map((trait) => (
+                <Grid item xl={2} md={4} sm={6} xs={12} key={trait.id}>
+                  <Trait
+                    imageUrl={trait.imageUrl}
+                    name={trait.name}
+                    amount={trait.amount}
+                  />
                 </Grid>
               ))}
             </Grid>

@@ -1,7 +1,7 @@
 .utilities {
   background: #184093;
   padding: 250px 0 200px;
-  margin-top: -130px;
+  margin-top: -80px;
 }
 .utiDesc {
   font-size: 20px;
@@ -18,15 +18,11 @@
   height: 1014px;
   background: url("../../public/images/yeticerberg.png") center center no-repeat;
   position: absolute;
-  top: 120px;
-  left: 40px;
+  top: 0px;
+  left: 0px;
 }
 
 @media screen and (max-width: 1499px) {
-  .yeti {
-    left: 100px;
-    top: 70px;
-  }
 }
 
 @media screen and (max-width: 599px) {

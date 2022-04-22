@@ -18,18 +18,18 @@ const Utilities = () => {
               position={"relative"}
               zIndex={10}
             >
-              Yeti Utilities
+              Meta Yeti NFTs
             </Typography>
             <Box className="flex-center">
               <Typography component="div" className={classes.utiDesc}>
-                MetaYeti is not just a profile picture that you can show off,
-                it&apos;s a ticket to access exclusive utilities and perks,
-                obtain a whitelist for other NFT projects, and it will be used
-                as genesis characters in our upcoming game.
+                Genesis yetis are the first form of entry into the game. A
+                collection of 6666 yetis in the space, with over 120+ different
+                traits from different faces, accessories, backgrounds, hats and
+                more!
                 <br />
                 <br />
-                Most of the proceeds from the mint will be used to fund the
-                production of the MetaYeti&apos;s game.
+                Genesis yetis are not only an NFT used in-game, they provide a
+                myriad of benefits to holders.
               </Typography>
             </Box>
           </Box>

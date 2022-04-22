@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Image from "next/dist/client/image";
 import classes from "../styles/home/Trait.module.css";
 
-const Trait = ({ imageUrl }) => {
+const Trait = ({ imageUrl, name, amount }) => {
   return (
     <Box>
       <Box className="flex-center">
@@ -15,10 +15,10 @@ const Trait = ({ imageUrl }) => {
           component="span"
           className={`${classes.normalTrait} ${classes.blue}`}
         >
-          Layer:
+          {name}:
         </Typography>
         <Typography component="span" className={classes.amount} marginLeft={2}>
-          123
+          {amount}
         </Typography>
         <Typography
           component="span"
