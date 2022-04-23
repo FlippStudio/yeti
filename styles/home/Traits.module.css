@@ -7,10 +7,9 @@
 .traits {
   background: url("../../public/images/trait-back.png") bottom center no-repeat,
     #091434;
-  padding: 150px 0 250px;
+  padding: 100px 0 250px;
 }
 .ourTraits {
-  margin-top: -200px;
   background: #091434;
   padding-bottom: 130px;
 }
@@ -26,7 +25,7 @@
   margin-bottom: 40px;
 }
 .ourTitle {
-  margin-top: 180px;
+  margin-top: 100px;
   margin-bottom: 54px;
 }
 .yetiDesc {
@@ -43,7 +42,7 @@
 
 @media screen and (max-width: 1199px) {
   .traits {
-    padding: 125px 0 250px;
+    padding: 0px 0 250px;
     text-align: center;
   }
   .mYeti {
@@ -52,9 +51,6 @@
 }
 
 @media screen and (max-width: 599px) {
-  .traits {
-    padding: 50px 0 250px;
-  }
   .yetiSubtitle {
     font-size: 16px;
   }

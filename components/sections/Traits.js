@@ -57,6 +57,30 @@ const traits = [
 const Traits = () => {
   return (
     <>
+      <section className={classes.ourTraits}>
+        <Container maxWidth="xl">
+          <Box>
+            <Typography
+              component="h2"
+              className={`${classes.ourTitle} title-section`}
+            >
+              200+ Traits!
+            </Typography>
+            <Grid container spacing={3} className="d-sm-none">
+              {traits.map((trait) => (
+                <Grid item xl={2} md={4} sm={6} xs={12} key={trait.id}>
+                  <Trait
+                    imageUrl={trait.imageUrl}
+                    name={trait.name}
+                    amount={trait.amount}
+                  />
+                </Grid>
+              ))}
+            </Grid>
+            <SliderMobile data={traits} />
+          </Box>
+        </Container>
+      </section>
       <section className={classes.traits} id="yetis">
         <Container maxWidth="xl">
           <Grid container spacing={2}>
@@ -109,30 +133,6 @@ const Traits = () => {
               </Box>
             </Grid>
           </Grid>
-        </Container>
-      </section>
-      <section className={classes.ourTraits}>
-        <Container maxWidth="xl">
-          <Box>
-            <Typography
-              component="h2"
-              className={`${classes.ourTitle} title-section`}
-            >
-              200+ Traits!
-            </Typography>
-            <Grid container spacing={3} className="d-sm-none">
-              {traits.map((trait) => (
-                <Grid item xl={2} md={4} sm={6} xs={12} key={trait.id}>
-                  <Trait
-                    imageUrl={trait.imageUrl}
-                    name={trait.name}
-                    amount={trait.amount}
-                  />
-                </Grid>
-              ))}
-            </Grid>
-            <SliderMobile data={traits} />
-          </Box>
         </Container>
       </section>
     </>

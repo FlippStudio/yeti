@@ -192,6 +192,9 @@ a {
   .swiper-pagination-bullet-active {
     width: 40px !important;
   }
+  .first-view {
+    padding-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 899px) {
@@ -218,7 +221,7 @@ a {
     position: absolute;
     bottom: 120px;
     left: 50%;
-    margin-left: -95px;
+    margin-left: -60px;
   }
   .comm-stat {
     margin: 0 20px;

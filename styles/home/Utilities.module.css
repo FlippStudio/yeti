@@ -1,7 +1,7 @@
 .utilities {
   background: #184093;
   padding: 250px 0 200px;
-  margin-top: -80px;
+  margin-top: 0px;
 }
 .utiDesc {
   font-size: 20px;
@@ -22,13 +22,13 @@
   left: 0px;
 }
 
-@media screen and (max-width: 1499px) {
+@media screen and (max-width: 1199px) {
+  .utilities {
+    padding: 0px 0 200px;
+  }
 }
 
 @media screen and (max-width: 599px) {
-  .utilities {
-    margin-top: -350px;
-  }
   .utiDesc {
     font-size: 16px;
     line-height: 24px;

@@ -7,7 +7,7 @@ const Trait = ({ imageUrl, name, amount }) => {
   return (
     <Box>
       <Box className="flex-center">
-        <Image src={imageUrl} alt="Trait" />
+        <Image src={imageUrl} alt="Trait" borderRadius={"16px"} />
       </Box>
 
       <Box className="flex-center" marginTop={1}>

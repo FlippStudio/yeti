@@ -7,7 +7,6 @@ import Community from "../components/sections/Community";
 import Canvas from "../components/Circle";
 import ResponsiveApp from "../components/sections/MainNav";
 
-
 const draw = (ctx) => {
   var maxSize = 10;
   var minSize = 5;
@@ -42,7 +41,7 @@ export default function Index() {
   return (
     <>
       <section className="first-view">
-        <Canvas draw={draw} className="canvas d-none" />
+        {/* <Canvas draw={draw} className="canvas d-none" /> */}
         <ResponsiveApp />
 
         <Welcome />

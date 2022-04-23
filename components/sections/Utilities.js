@@ -8,24 +8,25 @@ const Utilities = () => {
   return (
     <>
       <div className={`${classes.yeti} d-none`}></div>
-      <section className={classes.utilities} id="uti">
+      <section className={classes.utilities}>
         <Container maxWidth="xl">
           <Box>
             <Typography
               component="h2"
               className="title-section"
-              marginTop={"100px"}
+              paddingTop={"100px"}
               position={"relative"}
               zIndex={10}
+              id="uti"
             >
               Meta Yeti NFTs
             </Typography>
             <Box className="flex-center">
               <Typography component="div" className={classes.utiDesc}>
-                Genesis yetis are the first form of entry into the game. A
-                collection of 6666 yetis in the space, with over 120+ different
-                traits from different faces, accessories, backgrounds, hats and
-                more!
+                Genesis yetis are the first form of entry into the game Yeti
+                Village. A collection of 6666 yetis, with over 120+ different
+                traits ranging from different faces, accessories, backgrounds,
+                hats and more! more!
                 <br />
                 <br />
                 Genesis yetis are not only an NFT used in-game, they provide a
