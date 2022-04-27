@@ -24,7 +24,7 @@ const Utilities = () => {
             <Box className="flex-center">
               <Typography component="div" className={classes.utiDesc}>
                 Genesis yetis are the first form of entry into the game Yeti
-                Village. A collection of 6666 yetis, with over 120+ different
+                Village. A collection of 6666 yetis, with over 200+ different
                 traits ranging from different faces, accessories, backgrounds,
                 hats and more! more!
                 <br />
