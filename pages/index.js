@@ -41,9 +41,7 @@ export default function Index() {
   return (
     <>
       <section className="first-view">
-        {/* <Canvas draw={draw} className="canvas d-none" /> */}
         <ResponsiveApp />
-
         <Welcome />
       </section>
       <Utilities />

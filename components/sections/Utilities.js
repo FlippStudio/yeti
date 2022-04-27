@@ -26,7 +26,7 @@ const Utilities = () => {
                 Genesis yetis are the first form of entry into the game Yeti
                 Village. A collection of 6666 yetis, with over 200+ different
                 traits ranging from different faces, accessories, backgrounds,
-                hats and more! more!
+                hats and more!
                 <br />
                 <br />
                 Genesis yetis are not only an NFT used in-game, they provide a

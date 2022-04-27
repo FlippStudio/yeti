@@ -6,12 +6,12 @@
 .overflowMobile {
   overflow-x: hidden;
 }
-.sliderMobile{
+.sliderMobile {
   display: none;
 }
 
-@media screen and (max-width: 599px){
-  .sliderMobile{
+@media screen and (max-width: 599px) {
+  .sliderMobile {
     display: block;
   }
 }
