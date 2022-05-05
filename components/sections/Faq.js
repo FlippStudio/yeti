@@ -107,7 +107,7 @@ const teams = [
     id: 8,
     image: t8,
     position: "Marketing Manager",
-    name: "Aurelius",
+    name: "Greeeny",
     desc: "",
   },
 ];
