@@ -13,6 +13,7 @@ import Link from "next/link";
 import logo from "../../public/images/logo.svg";
 import Image from "next/image";
 import classes from "../../styles/MainNavigation.module.css";
+import CloseIcon from "@mui/icons-material/Close";
 
 const pages = ["About us", "Yetis", "Story", "Wishlist", "Roadmap"];
 
@@ -118,7 +119,7 @@ const ResponsiveApp = () => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              {anchorElNav !== null ? <CloseIcon /> : <MenuIcon />}
             </IconButton>
             <Menu
               id="menu-appbar"

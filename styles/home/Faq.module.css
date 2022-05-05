@@ -146,4 +146,8 @@
     line-height: 24px;
     margin-bottom: 32px;
   }
+  .teamBox {
+    padding: 0;
+    padding-left: 25px;
+  }
 }

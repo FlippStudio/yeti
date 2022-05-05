@@ -12,21 +12,18 @@ const SliderTeam = ({ data }) => {
   return (
     <div className={`${classes.overflowMobile} ${classes.sliderMobile}`}>
       <Swiper
-        slidesPerView={"auto"}
+        slidesPerView={2}
         loop={true}
-        spaceBetween={0}
+        spaceBetween={16}
+        className={classes.swiper}
         modules={[Pagination]}
       >
         {data.map((team) => (
-          <SwiperSlide
-            className={`${classes.slideContainer} flex-center`}
-            key={team.id}
-          >
+          <SwiperSlide className={`${classes.slideContainer}`} key={team.id}>
             <Box className={classesF.teamBox}>
               <Box className="flex-center">
                 <Image src={team.image} alt={team.name} />
               </Box>
-
               <Box className={classesF.teamPosition}>{team.position}</Box>
               <Box className={classesF.teamName}>{team.name}</Box>
               {team.desc !== "" && (

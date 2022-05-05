@@ -10,7 +10,15 @@
 
 @media screen and (max-width: 899px) {
   .page {
-    font-size: 18px;
+    font-size: 32px;
+    margin: 5px 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .page {
+    font-size: 24px;
     margin: 5px 0;
     text-align: center;
   }

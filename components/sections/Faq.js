@@ -154,11 +154,13 @@ const Faq = () => {
                 </Box>
               </Grid>
             ))}
-            <Grid item xs={12} sx={{ display: { xs: "block", sm: "none" } }}>
-              <SliderTeam data={teams} />
-            </Grid>
           </Grid>
         </Box>
+      </Container>
+      <Box sx={{ display: { xs: "block", sm: "none" } }}>
+        <SliderTeam data={teams} />
+      </Box>
+      <Container maxWidth="xl">
         <Box id="faq">
           <Typography
             component="h2"

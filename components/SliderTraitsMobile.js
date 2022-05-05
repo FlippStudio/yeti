@@ -10,16 +10,14 @@ const SliderMobile = ({ data }) => {
   return (
     <div className={`${classes.overflowMobile} ${classes.sliderMobile}`}>
       <Swiper
-        slidesPerView={"auto"}
         loop={true}
-        spaceBetween={0}
+        spaceBetween={16}
         modules={[Pagination]}
+        className={classes.swiper}
+        slidesPerView={2}
       >
         {data.map((trait) => (
-          <SwiperSlide
-            className={`${classes.slideContainer} flex-center`}
-            key={trait.id}
-          >
+          <SwiperSlide className={`${classes.slideContainer}`} key={trait.id}>
             <Trait
               imageUrl={trait.imageUrl}
               name={trait.name}

@@ -33,7 +33,7 @@ const traits = [
     id: 3,
     imageUrl: traitThree,
     name: "Clothes",
-    amount: 48,
+    amount: 46,
   },
   {
     id: 4,
@@ -51,7 +51,7 @@ const traits = [
     id: 6,
     imageUrl: traitSix,
     name: "Hat",
-    amount: 45,
+    amount: 44,
   },
 ];
 
@@ -144,10 +144,10 @@ const Traits = () => {
                 </Grid>
               ))}
             </Grid>
-            <SliderMobile data={traits} />
           </Box>
         </Container>
       </section>
+      <SliderMobile data={traits} />
     </>
   );
 };
