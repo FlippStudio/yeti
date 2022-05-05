@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik"),
+    url(../../public/fonts/rubik-mono-one.ttf) format("truetype");
+}
+
 .faq {
   padding-top: 130px;
   padding-bottom: 400px;
@@ -16,11 +22,6 @@
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 32px;
-}
-.teamDesc {
-  font-size: 20px;
-  line-height: 32px;
-  margin-top: 40px;
 }
 .mintBtn {
   width: 160px;
@@ -51,6 +52,60 @@
   line-height: 24px;
 }
 
+/* teams */
+.teamBox {
+  margin-bottom: 24px;
+  padding: 0 40px;
+}
+.teamPosition {
+  margin-top: 24px;
+  font-size: 12px;
+  line-height: 14px;
+}
+.teamName {
+  font-family: "Rubik", sans-serif !important;
+  font-size: 32px;
+  line-height: 32px;
+  margin-top: 8px;
+  color: #00a6f1;
+}
+
+.teamDesc {
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 12px;
+  margin-top: 12px;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.24);
+}
+
+@media screen and (max-width: 1499px) {
+  .teamBox {
+    padding: 0 35px;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .teamBox {
+    padding: 0 25px;
+  }
+}
+
+@media screen and (max-width: 1299px) {
+  .teamBox {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .teamBox {
+    padding: 0 5px;
+  }
+  .teamName {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+
 @media screen and (max-width: 899px) {
   .mintSec {
     margin-bottom: 100px;
@@ -58,6 +113,10 @@
   }
   .mintBtn {
     margin-bottom: 100px;
+  }
+  .teamName {
+    font-size: 24px;
+    line-height: 24px;
   }
 }
 

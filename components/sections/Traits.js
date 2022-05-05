@@ -14,6 +14,7 @@ import classes from "../../styles/home/Traits.module.css";
 import SliderMobile from "../SliderTraitsMobile";
 import { Button } from "@mui/material";
 import yetiMobile from "../../public/images/traits/yetimobile.svg";
+import yetiM from "../../public/images/traits/yetim.svg";
 
 const traits = [
   {
@@ -60,13 +61,7 @@ const Traits = () => {
       <section className={classes.traits} id="yetis">
         <Container maxWidth="xl">
           <Grid container spacing={2}>
-            <Grid
-              item
-              lg={6}
-              md={12}
-              order={{ xs: 3 }}
-              className={classes.mYeti}
-            >
+            <Grid item md={6} xs={12} className={classes.mYeti}>
               <Box
                 sx={{
                   width: "100%",
@@ -89,6 +84,29 @@ const Traits = () => {
                     while ensuring semi-passive gameplay for the busy. Return
                     daily and watch your yetis and treasury grow!
                   </Typography>
+                </Box>
+              </Box>
+            </Grid>
+            <Grid item md={6} xs={12} className={classes.mImageYeti}>
+              <Box className="flex-center">
+                <Image src={yetiM} alt="Play 2 earn" />
+              </Box>
+            </Grid>
+            <Grid item xs={12} className={classes.mYeti}>
+              <Box>
+                <Box textAlign={"center"}>
+                  <Typography compontent="h3" className={classes.yetiSubtitle}>
+                    Game details coming soon!
+                  </Typography>
+                  <Typography component="h2" className={classes.yetiTitle}>
+                    Play like Yeti
+                  </Typography>
+                  <Typography component="div" className={classes.yetiDesc}>
+                    As Yeti Village prosper, poachers and bandits will be out to
+                    steal and pillage! Defend Yeti Village with Yetis. With
+                    unique fighting mechanics that require some strategy and
+                    plan your yeti team well!
+                  </Typography>
                   <Button
                     variant="contained"
                     className={`${classes.mintBtn} btn`}
@@ -98,13 +116,7 @@ const Traits = () => {
                 </Box>
               </Box>
             </Grid>
-            <Grid
-              item
-              lg={6}
-              xs={12}
-              order={{ xs: 4 }}
-              className={classes.mImageYeti}
-            >
+            <Grid item xs={12} className={classes.mImageYeti}>
               <Box className="flex-center">
                 <Image src={yetiMobile} alt="Yeti Kotleti" />
               </Box>

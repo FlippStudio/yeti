@@ -3,9 +3,17 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import FaqAccordion from "../FaqAccordion";
 import classes from "../../styles/home/Faq.module.css";
-import { Button, Grid } from "@mui/material";
-import mint from "../../public/images/faq/mint.svg";
+import { Grid } from "@mui/material";
 import Image from "next/image";
+import t1 from "../../public/images/team/t1.svg";
+import t2 from "../../public/images/team/t2.svg";
+import t3 from "../../public/images/team/t3.svg";
+import t4 from "../../public/images/team/t4.svg";
+import t5 from "../../public/images/team/t5.svg";
+import t6 from "../../public/images/team/t6.svg";
+import t7 from "../../public/images/team/t7.svg";
+import t8 from "../../public/images/team/t8.svg";
+import SliderTeam from "../SliderTeam";
 
 const questions = [
   {
@@ -45,16 +53,75 @@ const questions = [
   },
 ];
 
+const teams = [
+  {
+    id: 1,
+    image: t1,
+    position: "Head of Game",
+    name: "Danzy",
+    desc: "",
+  },
+  {
+    id: 2,
+    image: t2,
+    position: "PM",
+    name: "Adam",
+    desc: "",
+  },
+  {
+    id: 3,
+    image: t3,
+    position: "Head of Relations",
+    name: "Hash",
+    desc: "",
+  },
+  {
+    id: 4,
+    image: t4,
+    position: "Lead Game Developer",
+    name: "Patrick",
+    desc: "",
+  },
+  {
+    id: 5,
+    image: t5,
+    position: "Head of Finance",
+    name: "Bella",
+    desc: "",
+  },
+  {
+    id: 6,
+    image: t6,
+    position: "CM",
+    name: "Kevin",
+    desc: "",
+  },
+  {
+    id: 7,
+    image: t7,
+    position: "Marketing Advisor",
+    name: "Cat",
+    desc: "",
+  },
+  {
+    id: 8,
+    image: t8,
+    position: "Marketing Manager",
+    name: "Aurelius",
+    desc: "",
+  },
+];
+
 const Faq = () => {
   return (
     <section className={classes.faq} id="story">
       <Container maxWidth="xl">
         <Box>
-          <Grid container spacing={3} className={classes.mintSec}>
-            <Grid item xs={12}>
-              <Box sx={{ textAlign: "center" }}>
+          <Grid container spacing={1} className={classes.mintSec}>
+            <Grid item xs={12} marginBottom={5}>
+              <Box>
                 <Typography component="span" className="title-section">
-                  The
+                  Yeti
                 </Typography>
                 <Typography
                   component="span"
@@ -64,20 +131,31 @@ const Faq = () => {
                 >
                   Team
                 </Typography>
-                <Box className="flex-center">
-                  <Typography
-                    component="div"
-                    className={classes.teamDesc}
-                    maxWidth={"800px"}
-                  >
-                    The team and partners behind MetaYeti are hardworking and
-                    talented, coming from various backgrounds and the developers
-                    behind the game has years of experience making all kinds of
-                    games for any platform. Own the yeti, be part of the
-                    yeti-verse.
-                  </Typography>
-                </Box>
               </Box>
+            </Grid>
+            {teams.map((team) => (
+              <Grid
+                item
+                md={3}
+                sm={4}
+                key={team.id}
+                sx={{ display: { xs: "none", sm: "block" } }}
+              >
+                <Box className={classes.teamBox}>
+                  <Box className="flex-center">
+                    <Image src={team.image} alt={team.name} />
+                  </Box>
+
+                  <Box className={classes.teamPosition}>{team.position}</Box>
+                  <Box className={classes.teamName}>{team.name}</Box>
+                  {team.desc !== "" && (
+                    <Box className={classes.teamDesc}>{team.desc}</Box>
+                  )}
+                </Box>
+              </Grid>
+            ))}
+            <Grid item xs={12} sx={{ display: { xs: "block", sm: "none" } }}>
+              <SliderTeam data={teams} />
             </Grid>
           </Grid>
         </Box>

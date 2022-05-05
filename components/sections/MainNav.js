@@ -66,7 +66,7 @@ const ResponsiveApp = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ mr: 2, display: { xs: "none", md: "flex" } }}>
-            <Link href="https://www.meta-yeti.com/">
+            <Link href="https://www.meta-yeti.com/" passHref={true}>
               <Image src={logo} alt="Meta logo" />
             </Link>
           </Box>
@@ -78,7 +78,7 @@ const ResponsiveApp = () => {
               justifyContent: "flex-start",
             }}
           >
-            <Link href="https://www.meta-yeti.com/">
+            <Link href="https://www.meta-yeti.com/" passHref={true}>
               <Image src={logo} alt="Meta logo" />
             </Link>
           </Box>
