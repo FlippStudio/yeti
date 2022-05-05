@@ -19,52 +19,52 @@ function getRandomInt(max) {
 const yetis = [
   {
     id: 1,
-    name: `YETI NAME #${getRandomInt(9999)}`,
+    name: `META YETI #${getRandomInt(9999)}`,
     imageUrl: yetiOne,
   },
   {
     id: 2,
-    name: `YETI NAME #${getRandomInt(9999)}`,
+    name: `META YETI #${getRandomInt(9999)}`,
     imageUrl: yetiTwo,
   },
   {
     id: 3,
-    name: `YETI NAME #${getRandomInt(9999)}`,
+    name: `META YETI #${getRandomInt(9999)}`,
     imageUrl: yetiFour,
   },
   {
     id: 4,
-    name: `YETI NAME #${getRandomInt(9999)}`,
+    name: `META YETI #${getRandomInt(9999)}`,
     imageUrl: yetiOne,
   },
   {
     id: 5,
-    name: `YETI NAME #${getRandomInt(9999)}`,
+    name: `META YETI #${getRandomInt(9999)}`,
     imageUrl: yetiFive,
   },
   {
     id: 6,
-    name: `YETI NAME #${getRandomInt(9999)}`,
+    name: `META YETI #${getRandomInt(9999)}`,
     imageUrl: yetiFour,
   },
   {
     id: 7,
-    name: `YETI NAME #${getRandomInt(9999)}`,
+    name: `META YETI #${getRandomInt(9999)}`,
     imageUrl: yetiTwo,
   },
   {
     id: 8,
-    name: `YETI NAME #${getRandomInt(9999)}`,
+    name: `META YETI #${getRandomInt(9999)}`,
     imageUrl: yetiOne,
   },
   {
     id: 9,
-    name: `YETI NAME #${getRandomInt(9999)}`,
+    name: `META YETI #${getRandomInt(9999)}`,
     imageUrl: yetiTwo,
   },
   {
     id: 10,
-    name: `YETI NAME #${getRandomInt(9999)}`,
+    name: `META YETI #${getRandomInt(9999)}`,
     imageUrl: yetiFour,
   },
 ];
