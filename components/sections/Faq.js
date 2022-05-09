@@ -32,7 +32,7 @@ const questions = [
     id: 3,
     title: "How big is the MetaYeti collection?",
     content:
-      "MetaYeti is the NFT collection of 5555 unique characters specially designed for the needs of the project.",
+      "MetaYeti is the NFT collection of 6666 unique characters specially designed for the needs of the project.",
   },
   {
     id: 4,
@@ -42,8 +42,7 @@ const questions = [
   {
     id: 5,
     title: "How can I buy a MetaYeti?",
-    content:
-      "MetaYeti will be available for purchase at Luart.io and a secret undisclosed site.",
+    content: "TBA",
   },
   {
     id: 6,
