@@ -87,7 +87,7 @@ const Traits = () => {
                 </Box>
               </Box>
             </Grid>
-            <Grid item md={6} xs={12} className={classes.mImageYeti}>
+            <Grid item md={6} xs={12}>
               <Box className="flex-center">
                 <Image src={yetiM} alt="Play 2 earn" />
               </Box>
