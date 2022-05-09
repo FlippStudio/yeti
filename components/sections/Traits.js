@@ -13,7 +13,7 @@ import Image from "next/image";
 import classes from "../../styles/home/Traits.module.css";
 import SliderMobile from "../SliderTraitsMobile";
 import { Button } from "@mui/material";
-import yetiMobile from "../../public/images/traits/yetimobile.svg";
+import yetiMobile from "../../public/images/traits/yetibattle.png";
 import yetiM from "../../public/images/traits/yetim.svg";
 
 const traits = [
@@ -116,8 +116,8 @@ const Traits = () => {
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={12} className={classes.mImageYeti}>
-              <Box className="flex-center">
+            <Grid item xs={12}>
+              <Box className={`flex-center ${classes.mImageYeti}`}>
                 <Image src={yetiMobile} alt="Yeti Kotleti" />
               </Box>
             </Grid>

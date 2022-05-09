@@ -39,6 +39,10 @@
 .mintBtn {
   width: 210px;
 }
+.mImageYeti {
+  border: 6px solid #00a6f1;
+  border-radius: 10px;
+}
 
 @media screen and (max-width: 1199px) {
   .traits {
